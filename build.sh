@@ -59,7 +59,7 @@ install_pip_dependencies() {
   local dist_dir="$DIST_DIR/python"
   mkdir -p "$dist_dir"
 
-  pip install --target "$dist_dir" --requirement="$PACKAGE_FILE"
+  pip3 install --target "$dist_dir" --requirement="$PACKAGE_FILE"
 }
 
 install_gem_dependencies() {
